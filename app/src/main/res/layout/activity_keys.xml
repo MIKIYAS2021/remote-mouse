@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Keys">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/item_selector"
+        app:menu="@menu/item_menu" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/otherkeys"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_marginBottom="-4dp"
+        android:minHeight="60dip">
+
+        <Button
+            android:id="@+id/pg_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="pg up"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/pg_dn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="pg dn"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="end"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="delete"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/pghome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="home"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/prt_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="prt sc"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/esc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="esc"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="enter"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <ImageButton
+            android:id="@+id/leftbut"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:layout_column="1"
+            app:layout_row="4"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_left_24" />
+
+        <ImageButton
+            android:id="@+id/downbut"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:layout_column="2"
+            app:layout_row="4"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+
+        <ImageButton
+            android:id="@+id/rightbut"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:layout_column="3"
+            app:layout_row="4"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+        <ImageButton
+            android:id="@+id/upbut"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:minHeight="48dp"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+        <Button
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="space"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copy"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/paste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="paste"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/cut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cut"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="undo"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/redo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="redo"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="win"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+</RelativeLayout>

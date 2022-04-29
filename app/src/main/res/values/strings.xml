@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mouse</string>
+    <string name="send">Send</string>
+    <string name="server_ip">server IP</string>
+</resources>

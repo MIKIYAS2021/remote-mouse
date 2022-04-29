@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/mousePad"
+        android:layout_width="match_parent"
+        android:layout_height="463dp"
+        android:layout_above="@id/bottom_nav"
+        android:background="#031f52"
+        android:clickable="true"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="100dp"
+        android:layout_height="68dp"
+        android:layout_above="@id/mousePad"
+        android:backgroundTint="#024d44"
+        android:text="LEFT"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="100dp"
+        android:layout_height="68dp"
+        android:layout_above="@id/mousePad"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="#024d44"
+        android:text="RIGHT"
+        android:textStyle="bold"
+       />
+
+    <ToggleButton
+        android:id="@+id/pressOrRelease"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_above="@id/mousePad"
+        android:layout_centerHorizontal="true"
+        android:text="press/release"
+        android:textOff="release"
+        android:textOn="press"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemTextColor="@drawable/item_selector"
+        app:menu="@menu/item_menu" />
+
+</RelativeLayout>

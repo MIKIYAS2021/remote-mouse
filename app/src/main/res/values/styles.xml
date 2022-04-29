@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/PRIMARY</item>
+    <item name="colorPrimaryVariant">@color/SECOND</item>
+    <item name="colorOnPrimary">@color/THIRD</item>
+    </style>
+    <style name="splashTheme" parent="Theme.AppCompat.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/PRIMARY</item>
+    <item name="colorPrimaryVariant">@color/PRIMARY</item>
+    <item name="colorOnPrimary">@color/PRIMARY</item>
+    </style>
+</resources>
